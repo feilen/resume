@@ -1,0 +1,92 @@
+\documentclass{letter}
+\pagestyle{empty}
+\usepackage[margin=0.45in]{geometry}
+% Uncomment the following line to allow the usage of graphics (.jpg, .png, etc.)
+%\usepackage[pdftex]{graphicx}
+
+% Comment the following line to deny the usage of umlauts and other non-ASCII characters
+\usepackage[utf8]{inputenc}
+\usepackage[none]{hyphenat}
+% Use the following if we want output in Helvetica
+\usepackage[scaled]{helvet}
+\usepackage{calc}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{tabulary}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*,itemsep=1.5pt}
+% Start the document
+\begin{document}
+
+% Document settings
+\linespread{1.15}
+\renewcommand{\arraystretch}{1.15}
+% Let us globally change the bulleted list size
+%\newcommand{\middleboxsize}{0.65 \textwidth}
+\newlength{\sizespace}
+\settowidth{\sizespace}{\large \textbf{Employment:}}
+\newlength{\middleboxsize}
+\setlength{\middleboxsize}{\paperwidth-\sizespace-1.8in}
+
+
+% Title and address/info
+\begin{center}
+{
+\Large \textbf{ZACHARY JAGGI}
+}
+
+1700 Savage Drive, Plano, Texas 75023\\469-443-8325 // zxj110030@utdallas.edu \\[14pt]
+% Meat of the document.
+\begin{tabulary}{\textwidth}{llr}
+{ \large \textbf{Education:} } & \textbf{University of Texas at Dallas, Richardson, TX} & \textbf{August 2013 - Present} \\
+& Candidate for Bachelor of Science in Computer Science \\[7pt]
+& \textbf{Collin College, Plano, TX} & \textbf{August 2011 - May 2013} \\
+ & Associates of Sciences \\
+\\
+{ \large \textbf{Employment:} } & \textbf{Elk Products, Hickory, NC}  (Software Engineering Intern) & \textbf{May 2013 - Present} \\
+ & \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Rewrote several server softwares from the ground up to be streamlined, greatly reducing latency and significantly reducing memory and CPU footprint
+\item Corrected issues in UI of consumer remote control software, reducing problematic page loading time from seconds to milliseconds, as well as improving debug output
+\end{itemize} } } \\
+\\
+{ \large \textbf{Skills:} } & \textbf{Programming} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item In-depth knowledge of \textbf{C/C++, Bash, Perl, C\#, Java,} and \textbf{\rmfamily \LaTeX}
+\item Experience in \textbf{Python, JS, PHP, Visual Basic, MySQL/MariaDB interfaces}
+\item Experience with development in \textbf{Microsoft Visual Studio, Eclipse IDEs}
+\item Use of \textbf{debugging utilities} (valgrind, GDB, GDB Embedded)
+\item Some experience in \textbf{Android development}
+\item Experience in libraries including \textbf{SDL/2, POSIX, OpenAL Soft}
+\item Worked with \textbf{Git} and \textbf{SVN} source tracking 
+\end{itemize} } } \\
+& \textbf{System Administration} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Administration of \textbf{Nginx, Apache} and other servers software
+\item Years of experience with various distributions of \textbf{Linux (especially Arch Linux)}
+\item Experienced in task automation via \textbf{Bash, Perl} and \textbf{Python} scripts
+\end{itemize} } } \\
+& \textbf{Embedded Systems} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Experienced in programming for \textbf{embedded systems}
+\item AVR/ARM Microcontrollers: \textbf{ATMega} and \textbf{ATTiny series}
+\end{itemize} } } \\
+\\
+{ \large \textbf{Projects:} } & \textbf{Virtual Reality} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Development of interfaces for Virtual Reality technology (Vuzix VR920, Wii, some early Oculus Rift tech)
+\item Wrote scripts for GlovePIE (Glove programmable input emulator) to take input from virtual reality headgear and emulate a mouse device
+\end{itemize} } } \\
+& \textbf{Open Source Community} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Ongoing packaging of software for the ArchLinux distribution, including VRUI development kit, Octoprint 3d printer remote software, and others as well as contributed to the various articles of the ArchLinux Wiki, especially in resolving installation issues and performance optimizations
+\item Knowledge of image manipulation, including common issues in image scaling and image resampling algorithms
+\end{itemize} } } \\
+& \textbf{3D Printing} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Built and continually upgraded a MakerBot Cupcake, a hobbyist CNC 3D printer, including redesign of several individual parts using the OpenSCAD parametric 3D modeler
+\item Worked with the embedded C firmware code loaded onto the printer motherboard
+\end{itemize} } } \\
+\end{tabulary}
+\end{center}
+\end{document}
+
