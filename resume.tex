@@ -1,28 +1,34 @@
 \documentclass{letter}
 \pagestyle{empty}
 \usepackage[margin=0.45in]{geometry}
-% Uncomment the following line to allow the usage of graphics (.jpg, .png, etc.)
-%\usepackage[pdftex]{graphicx}
 
 % Comment the following line to deny the usage of umlauts and other non-ASCII characters
 \usepackage[utf8]{inputenc}
+
+% Disable hyphenation, always move to next line.
 \usepackage[none]{hyphenat}
-% Use the following if we want output in Helvetica
-\usepackage[scaled]{helvet}
+
+% Allow on-the-fly calculation of margins
 \usepackage{calc}
+
+% Import helvetica as Sans Serif default, then make Sans Serif the global default.
+\usepackage[scaled]{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[T1]{fontenc}
+
+% Nice tables, nice enumeration of items with custom seperation.
 \usepackage{tabulary}
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*,itemsep=1.5pt}
+
 % Start the document
 \begin{document}
 
 % Document settings
 \linespread{1.15}
 \renewcommand{\arraystretch}{1.15}
+
 % Let us globally change the bulleted list size
-%\newcommand{\middleboxsize}{0.65 \textwidth}
 \newlength{\sizespace}
 \settowidth{\sizespace}{\large \textbf{Employment:}}
 \newlength{\middleboxsize}
@@ -31,9 +37,7 @@
 
 % Title and address/info
 \begin{center}
-{
-\Large \textbf{ZACHARY JAGGI}
-}
+{ \Large \textbf{ZACHARY JAGGI} }
 
 1700 Savage Drive, Plano, Texas 75023\\469-443-8325 // zxj110030@utdallas.edu \\[14pt]
 % Meat of the document.
