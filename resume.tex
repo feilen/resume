@@ -1,7 +1,7 @@
 \newcommand{\myname}{Chelsea Jaggi}
 \newcommand{\phone}{469-443-8325}
-\newcommand{\email}{zxj110030@utdallas.edu}
-\newcommand{\myaddress}{1 St Francis Pl Apt 2902, San Francisco, CA 94107}
+\newcommand{\email}{tuxcatdeveloper@gmail.com}
+\newcommand{\myaddress}{San Francisco, CA}
 \newcommand{\mysite}{https://github.com/feilen}
 
 \documentclass{letter}
@@ -47,15 +47,22 @@
 \begin{center}
 { \Large \textbf{\MakeUppercase\myname} }
 
-{\myaddress}\\ {\phone} • {\email}\\ {\mysite} \\[14pt]
+{\myaddress} • {\phone}\\ {\email}\\ {\mysite} \\[14pt]
 % Meat of the document.
 \begin{tabulary}{\textwidth}{llr}
-{ \large \textbf{Education:} } & \textbf{University of Texas at Dallas, Richardson, TX} & \textbf{August 2013 - May 2016} \\
-& Bachelor of Science in Computer Science \\[7pt]
-& \textbf{Collin College, Plano, TX} & \textbf{August 2011 - May 2013} \\
- & Associates of Sciences \\
 \\
-{ \large \textbf{Employment:} } & \textbf{Elk Products, Hickory, NC}  (Software Engineering Intern) & \textbf{May 2013 - Present} \\
+{ \large \textbf{Employment:} } & 
+\textbf{Riverbed Technology, SF, CA}  (Software Engineer) & \textbf{October 2016 - Present} \\
+ & \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Added both virtual and hardware interfaces to the abstraction layer for capturing network traffic, allowing traffic capture on AWS (virtual) and 40/100Gbit fiber (hardware) interfaces
+\item Fine tuned several API functions, letting us export over several hundred time ranges at once instead of opening a socket for each, turning an operation which took minutes into seconds
+\item Created hardware-specific profiles that forced certain processes on to certain CPUs in a multi-CPU system, ensuring the capture card was directly tied to the CPU
+\item Added forced compiler checks that ensure success/fail return values are being consumed
+\item Repackaged neccesary open-source software for our custom Redhat-based distribution
+\item Cleared a considerable amount of legacy code that required explicitly initializing/deinitializing objects, letting the constructor do the work
+\item Participated in regular code review and improvement, as well as triaging and reprioritizing bugs, assigning and updating estimates
+\end{itemize} } } \\
+& \textbf{Elk Products, Hickory, NC}  (Software Engineering Intern) & \textbf{May 2013 - October 2016} \\
  & \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
 \item Rewrote several server softwares from the ground up to be streamlined, greatly reducing latency and significantly reducing memory and CPU footprint
 \item Developed a custom distributed server for devices connecting via a custom protocol
@@ -63,6 +70,12 @@
 \item Wrapped the above API using SWIG, for automated use in Android, iOS, Windows
 \item Designed a hardware-independent embedded firmware in C++11
 \end{itemize} } } \\
+\\
+{ \large \textbf{Education:} } & \textbf{University of Texas at Dallas, Richardson, TX} & \textbf{August 2013 - May 2016} \\
+& Bachelor of Science in Computer Science \\[7pt]
+& \textbf{Collin College, Plano, TX} & \textbf{August 2011 - May 2013} \\
+ & Associates of Sciences \\
+
 \\
 { \large \textbf{Skills:} } & \textbf{Programming} & \\
 & \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
@@ -72,7 +85,6 @@
 \item Use of \textbf{debugging utilities} (valgrind, GDB, GDB Embedded)
 \item Experienced in \textbf{Android development}, and creating \textbf{cross-platform libraries} with \textbf{SWIG}
 \item In-depth experience with \textbf{Git} and \textbf{SVN} version control systems
-\item Experienced in several \textbf{machine learning} toolkits, expecially python-nolearn and AML
 \item Very experienced in creating \textbf{networked applications}, including \textbf{distributed servers} and clients
 \item Some experience in writing \textbf{compilers and interpreters} for custom languages
 \item Prior use of \textbf{profiling tools} to optimize hot-paths in expensive applications
@@ -85,8 +97,24 @@
 \item AVR/ARM Microcontrollers: \textbf{ATMega} and \textbf{ATTiny series}, and several \textbf{Freescale} processors
 \item Resolving issues in provided \textmu OS to support \textbf{high level C++11 firmware}
 \end{itemize} } } \\
+& \textbf{Machine Learning} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Experienced in several \textbf{machine learning} toolkits, expecially python-nolearn and AML
+\item Some experience using \textbf{GloVe word embeddings} for \textbf{Natural Language Analysis}
+\item Experience with \textbf{facial recognition} correlation to match users to faces
+\end{itemize} } } 
+\end{tabulary}
+\end{center}
+\begin{center}
+\begin{tabulary}{\textwidth}{llr}
 \\
-{ \large \textbf{Projects:} } & \textbf{Virtual Reality} & \\
+{ \large \textbf{Projects:} } & \textbf{Machine Learning} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Implemented a natural-language learning bot for a chat program which attempts to detect inflammatory messages via a neural network, forwarding them to an administrator chat
+\item Sourced the above implementation to create a bot for a chat program that signs in as me, automatically learning what messages I'd be most interested in and notifying me when they are posted
+\item Created a facial recognition command-line script that infers which face belongs to which user in a chatroom, automatically exporting VCARD contacts that can then be imported into a phone
+\end{itemize} } } \\
+& \textbf{Virtual Reality} & \\
 & \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
 \item Development of interfaces for Virtual Reality technology (Vuzix VR920, Wii, Oculus Rift DK1/DK2)
 \item Managing the crossplatform work neccesary to run Dolphin VR (Gamecube emulator) on Linux, and assisting with the new official support via OSVR
@@ -101,6 +129,12 @@
 & \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
 \item Built and continually upgraded a MakerBot Cupcake, a hobbyist CNC 3D printer, including redesign of several individual parts using the OpenSCAD parametric 3D modeler
 \item Worked with the embedded C firmware code loaded onto the printer motherboard
+\end{itemize} } } \\
+& \textbf{Misc Projects} & \\
+& \multicolumn{2}{c}{\parbox{\middleboxsize}{ \begin{itemize} 
+\item Created an Android app for WearOS, which uses a huffman-coded chorded keyboard to allow you to touch-type with muscle memory on only four keys
+\item Created a calendar bot which scrapes several calendars, formatting them and displaying in a chatroom to encourage San Francisco locals to come to events
+\item Created a bot which signs in as me on a chat program, automatically detecting when someone posts my name or a picture of my face
 \end{itemize} } } \\
 \end{tabulary}
 \end{center}
